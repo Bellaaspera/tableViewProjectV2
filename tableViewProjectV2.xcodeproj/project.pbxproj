@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		70271F8F28955105009D8757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70271F8E28955105009D8757 /* AppDelegate.swift */; };
 		70271F9128955105009D8757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70271F9028955105009D8757 /* SceneDelegate.swift */; };
-		70271F9328955105009D8757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70271F9228955105009D8757 /* ViewController.swift */; };
 		70271F9628955105009D8757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70271F9428955105009D8757 /* Main.storyboard */; };
 		70271F9828955107009D8757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70271F9728955107009D8757 /* Assets.xcassets */; };
 		70271F9B28955107009D8757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70271F9928955107009D8757 /* LaunchScreen.storyboard */; };
+		70271FA6289554A3009D8757 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70271FA5289554A3009D8757 /* RegistrationViewController.swift */; };
+		705F376A28983B110077E889 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705F376928983B110077E889 /* User.swift */; };
+		70CF10FA28955D48006C6BD7 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF10F928955D48006C6BD7 /* FirstTableViewCell.swift */; };
+		70CF10FC28955D5B006C6BD7 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF10FB28955D5B006C6BD7 /* SecondTableViewCell.swift */; };
+		70CF10FE28955D69006C6BD7 /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF10FD28955D69006C6BD7 /* ThirdTableViewCell.swift */; };
+		70CF110028955D79006C6BD7 /* ForthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF10FF28955D79006C6BD7 /* ForthTableViewCell.swift */; };
+		70CF11222895A6C8006C6BD7 /* VaccineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF11212895A6C8006C6BD7 /* VaccineViewController.swift */; };
+		70CF11242895A8BE006C6BD7 /* VaccineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF11232895A8BE006C6BD7 /* VaccineTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70271F8B28955105009D8757 /* tableViewProjectV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewProjectV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70271F8E28955105009D8757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70271F9028955105009D8757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70271F9228955105009D8757 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70271F9528955105009D8757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70271F9728955107009D8757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70271F9A28955107009D8757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70271F9C28955107009D8757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70271FA5289554A3009D8757 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		705F376928983B110077E889 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		70CF10F928955D48006C6BD7 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		70CF10FB28955D5B006C6BD7 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		70CF10FD28955D69006C6BD7 /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
+		70CF10FF28955D79006C6BD7 /* ForthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthTableViewCell.swift; sourceTree = "<group>"; };
+		70CF11212895A6C8006C6BD7 /* VaccineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineViewController.swift; sourceTree = "<group>"; };
+		70CF11232895A8BE006C6BD7 /* VaccineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,62 @@
 		70271F8D28955105009D8757 /* tableViewProjectV2 */ = {
 			isa = PBXGroup;
 			children = (
-				70271F8E28955105009D8757 /* AppDelegate.swift */,
-				70271F9028955105009D8757 /* SceneDelegate.swift */,
-				70271F9228955105009D8757 /* ViewController.swift */,
-				70271F9428955105009D8757 /* Main.storyboard */,
+				705F376828983AEC0077E889 /* Models */,
+				70CF10F828955D14006C6BD7 /* TableViewCells */,
+				70271FA228955119009D8757 /* App */,
+				70271FA328955120009D8757 /* ViewControllers */,
+				70271FA428955134009D8757 /* StoryBoards */,
 				70271F9728955107009D8757 /* Assets.xcassets */,
-				70271F9928955107009D8757 /* LaunchScreen.storyboard */,
 				70271F9C28955107009D8757 /* Info.plist */,
 			);
 			path = tableViewProjectV2;
+			sourceTree = "<group>";
+		};
+		70271FA228955119009D8757 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				70271F8E28955105009D8757 /* AppDelegate.swift */,
+				70271F9028955105009D8757 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		70271FA328955120009D8757 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70271FA5289554A3009D8757 /* RegistrationViewController.swift */,
+				70CF11212895A6C8006C6BD7 /* VaccineViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		70271FA428955134009D8757 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				70271F9428955105009D8757 /* Main.storyboard */,
+				70271F9928955107009D8757 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		705F376828983AEC0077E889 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				705F376928983B110077E889 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70CF10F828955D14006C6BD7 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				70CF10F928955D48006C6BD7 /* FirstTableViewCell.swift */,
+				70CF10FB28955D5B006C6BD7 /* SecondTableViewCell.swift */,
+				70CF10FD28955D69006C6BD7 /* ThirdTableViewCell.swift */,
+				70CF10FF28955D79006C6BD7 /* ForthTableViewCell.swift */,
+				70CF11232895A8BE006C6BD7 /* VaccineTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70271F9328955105009D8757 /* ViewController.swift in Sources */,
 				70271F8F28955105009D8757 /* AppDelegate.swift in Sources */,
+				70CF10FC28955D5B006C6BD7 /* SecondTableViewCell.swift in Sources */,
+				70CF110028955D79006C6BD7 /* ForthTableViewCell.swift in Sources */,
+				70271FA6289554A3009D8757 /* RegistrationViewController.swift in Sources */,
+				70CF10FA28955D48006C6BD7 /* FirstTableViewCell.swift in Sources */,
 				70271F9128955105009D8757 /* SceneDelegate.swift in Sources */,
+				70CF11222895A6C8006C6BD7 /* VaccineViewController.swift in Sources */,
+				70CF10FE28955D69006C6BD7 /* ThirdTableViewCell.swift in Sources */,
+				705F376A28983B110077E889 /* User.swift in Sources */,
+				70CF11242895A8BE006C6BD7 /* VaccineTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +400,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
