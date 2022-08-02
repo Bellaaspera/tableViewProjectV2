@@ -7,9 +7,7 @@
 
 
 struct User {
-    var username: String
-    var password: String
-    var pets: [Animal: [Info]] = [:]
+    var data: [String: [Pet]]
     
     static func getUserList() -> [User] {
         let userList: [User] = []
@@ -17,14 +15,20 @@ struct User {
     }
 }
 
-enum Animal {
-    case dog
-    case cat
-}
-
-struct Info {
+struct Pet {
+    var animalType: AnimalType
     var name: String = ""
     var breed: String = ""
-    var age: Int = 0
+    var age: String = ""
     var vaccinations: [String] = []
+    
+    static func getPetList() -> [Pet] {
+        let petList: [Pet] = []
+        return petList
+    }
+}
+
+enum AnimalType {
+    case dog
+    case cat
 }

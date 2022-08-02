@@ -9,39 +9,56 @@ import UIKit
 
 class RegistrationViewController: UIViewController {
     
+//    MARK: IBOutlet + properties
+
     @IBOutlet weak var tableView: UITableView!
     
-    private let user = User(username: "login", password: "password")
-    
-    private var animal: String = ""
     private var animalName: [String] = []
+    private var animalAge: [String] = []
+    private var animalBreed: [String] = []
     private var animalVaccines: [String] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+    
+//    MARK: Override class functions
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
         view.endEditing(true)
     }
+ 
+//    MARK: IBActions
     
     @IBAction func saveButtonPressed() {
-        
+        performSegue(withIdentifier: "showResult", sender: nil)
     }
     
+//    MARK: Private funtions
+    
+    private func getPetData() -> Pet {
+        
+        var currentPet = Pet(animalType: .dog)
+        currentPet.name = animalName[0]
+        currentPet.age = animalAge[0]
+        currentPet.breed = animalBreed[0]
+        currentPet.vaccinations = animalVaccines
+        
+        return currentPet
+        
+    }
     
 //    MARK: - PrepareForSegue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let vaccineCV = segue.destination as? VaccineViewController else { return }
-        vaccineCV.title = "Vaccine Selection"
+        if let vaccineCV = segue.destination as? VaccineViewController {
+            vaccineCV.title = "Vaccine Selection"
+        } else if let resultVC = segue.destination as? ResultViewController {
+            resultVC.title = "Your Pet Data"
+            resultVC.pet = getPetData()
+        }
     }
     
     @IBAction func unwindTo(_ unwindSegue: UIStoryboardSegue) {
-        guard let vaciineVC = unwindSegue.source as? VaccineViewController else { return }
-        animalVaccines = vaciineVC.selectedVaccines
+        guard let vaccineVC = unwindSegue.source as? VaccineViewController else { return }
+        animalVaccines = vaccineVC.selectedVaccines
         print(animalVaccines)
         
     }
@@ -51,7 +68,7 @@ class RegistrationViewController: UIViewController {
     }
 }
 
-// MARK: - UITableViewDataSource
+// MARK: - UITableViewDataSource + UITextFieldDelegate + Custon protocols
 
 extension RegistrationViewController: UITableViewDataSource, FirstTableViewCellDelegate, UITextFieldDelegate, SecondTableViewCellDelegate, ThirdTableViewCellDelegate {
     
@@ -97,11 +114,11 @@ extension RegistrationViewController: UITableViewDataSource, FirstTableViewCellD
         case 0:
             animalName.append(textField.text ?? "No value")
         case 1:
-            animalName.append(textField.text ?? "No value")
+            animalAge.append(textField.text ?? "No value")
         default:
-            animalName.append(textField.text ?? "No value")
+            animalBreed.append(textField.text ?? "No value")
         }
-        print(animalName)
+        print(animalName, animalAge, animalBreed)
     }
     
 }
